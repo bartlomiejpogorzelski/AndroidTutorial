@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends Activity{
-
+    private int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +56,11 @@ public class MainActivity extends Activity{
                 .setSmallIcon(android.R.drawable.ic_menu_zoom)
                 .setContentTitle("NOTYFIKACJA")
                 .setContentText("This is content ...")
+                .setContentInfo("Masz:"+ ++i + "wiadomości")
+                //.setNumber(++i) // w prawym rogu liczba klikniec się pojawia przy notyfikacji
+                .setAutoCancel(true) // czy chcemy aby sama sie usuwała po kliknieciu
                 .setContentIntent(pendingIntent);
+
 
         Notification notification = notificationBuilder.build();
 
