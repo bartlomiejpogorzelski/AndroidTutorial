@@ -25,4 +25,20 @@
 
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="notyfication"
+            android:onClick="nClick"
+
+            />
+
+
+    </LinearLayout>
 </LinearLayout>
