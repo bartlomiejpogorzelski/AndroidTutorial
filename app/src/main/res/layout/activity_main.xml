@@ -11,24 +11,46 @@
     tools:context="com.example.bartek.androidtutorial.MainActivity"
     android:orientation="horizontal">
 
-    <EditText
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edit"
-        android:hint="wpisz"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="btnClick"
-        android:text="wpisz"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            android:hint="wpisz"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnClick"
+            android:text="wpisz"
 
-        />
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dodaj wartość +1"
+            android:id="@+id/sherClick"
+            android:onClick="sherClick"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/sharedID"
+            />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_gravity="bottom"
         >
         <Button
@@ -38,6 +60,7 @@
             android:onClick="nClick"
 
             />
+
 
 
     </LinearLayout>
