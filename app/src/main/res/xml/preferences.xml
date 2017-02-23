@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Ogólne">
+        <EditTextPreference
+            android:key="username"
+            android:title="nazwa uzytkownika"
+            android:summary="podaj nazwe uzytkownika"/>
+        <CheckBoxPreference
+            android:key="auto_backoup"
+            android:title="automatyczna kopia zapasowa"
+            android:summary="on/off"/>
+        <ListPreference
+            android:key="theme"
+            android:title="motyw"
+            android:summary="wybierz motyw aplikacji"
+            android:entries="@array/list_Entre"
+            android:entryValues="@array/list_Values"/>
+    </PreferenceCategory>
+</PreferenceScreen>
